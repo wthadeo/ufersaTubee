@@ -3,7 +3,7 @@ const fs = require("fs");
 const app = express();
 
 app.get ("/", function(request, response){
-    response.sendFile(__dirname + "/index.html");
+    response.sendFile(__dirname + "/views/videoPlayer.html");
 });
 
 

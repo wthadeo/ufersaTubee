@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/510cfc9fc6.js" crossorigin="anonymous"></script>
+
+    <title>UfersaTube</title>
+
+    <style>
+        body{
+            background-color: #CAF0F8;
+
+        }
+        .botao{
+            background-color: #03045E;
+            width: 100px;
+        }
+        .pesquisa{
+            width: 700px;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <header> <!-- Cabeçalho Menu Inicio -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+          <div class="container">
+            
+            <a href="" class="navbar-brand">
+              <img src="../img/logo.png" width="142">
+            </a>
+  
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+  
+            <form class="d-flex input-group input-group-md">
+              <input class="form-control pesquisa" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-large botao" type="submit">Search</button>
+            </form>
+  
+            <div id="navbarMenu" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="" class="btn btn-outline-light ml-1">Entrar</a>
+                </li>
+              </ul>
+            </div>
+  
+          </div>
+        </nav>
+      </header><!-- Cabeçalho Menu Fim -->
+
+    
+    <video id="videoPlayer" width="850" class="videoP" controls muted="muted" >
+        <source src="" type="video/mp4"/> 
+    </video>
+    <br>
+    <button onclick="changeto240()">240p</button>
+    <button onclick="changeto360()">360p</button>
+    <button onclick="changeto480()">480p</button>
+    <button onclick="changeto720()">720p</button>
+    <button onclick="changeto1080()">1080p</button>
+    <button onclick="autoQuality()">Auto</button>
+    <br><br>
+    <button onclick="big()">Big Buck Bunny</button>
+    <button onclick="raindrops()">Raindrops</button>
+</body>
+<script>
+
+    var videoPlayer = document.getElementById("videoPlayer");
+    
+    var currentTime;
+    var chosenVideo = "Big_Buck_Bunny_";
+    var auto = true;
+
+    
+    setInterval( ()=> {
+        if(auto){
+            autoQuality();
+        }
+    }, 10000);
+    
+
+    function big(){
+        chosenVideo = "Big_Buck_Bunny_";
+        videoPlayer.currentTime = 0;
+        autoQuality();
+        
+    }
+
+    function raindrops(){
+        chosenVideo = "Raindrops_";
+        videoPlayer.currentTime = 0;
+        autoQuality();
+        
+    }
+
+    function autoQuality(){
+        this.auto = true;
+        var internetQuality = displaySpeed();
+        var name = "";
+        if(internetQuality < 2000){
+            name = "/video/" + chosenVideo + "240p.mp4";
+            changeVideoQuality(name);
+            console.log("240p");
+        } else if (internetQuality >= 2000 && internetQuality < 3000){
+            name = "/video/" + chosenVideo + "360p.mp4";
+            changeVideoQuality(name);
+            console.log("360p");            
+        } else if (internetQuality >= 3000 && internetQuality < 4000){
+            name = "/video/" + chosenVideo + "480p.mp4";
+            changeVideoQuality(name);
+            console.log("480p");            
+        } else if (internetQuality >= 4000 && internetQuality < 5000){
+            name = "/video/" + chosenVideo + "720p.mp4";
+            changeVideoQuality(name);
+            console.log("720p");            
+        } else if (internetQuality >= 5000 ){
+            name = "/video/" + chosenVideo + "1080p.mp4"; 
+            changeVideoQuality(name);
+            console.log("1080p");           
+        }
+    }
+
+    function changeto240(){
+        var name240 = "/video/" + chosenVideo + "240p.mp4";
+        changeVideoQuality(name240);
+        this.auto = false;
+        console.log("change to 240p");
+        console.log(auto);
+    }
+
+    function changeto360(){
+        var name360 = "/video/" + chosenVideo + "360p.mp4";
+        changeVideoQuality(name360);
+        this.auto = false;
+        console.log("change to 360p");
+        console.log(auto);
+    }
+
+    function changeto480(){
+        var name480 = "/video/" + chosenVideo + "480p.mp4";
+        changeVideoQuality(name480);
+        this.auto = false;
+        console.log("change to 480p");
+        console.log(auto);
+    }
+
+    function changeto720(){
+        var name720 = "/video/" + chosenVideo + "720p.mp4";
+        changeVideoQuality(name720);
+        this.auto = false;
+        console.log("change to 720p");
+        console.log(auto);
+    }
+
+    function changeto1080(){
+        var name1080 = "/video/" + chosenVideo + "1080p.mp4";
+        changeVideoQuality(name1080);
+        this.auto = false;
+        console.log("change to 1080p");
+        console.log(auto);
+    }
+
+    function changeVideoQuality(src){
+        currentTime = videoPlayer.currentTime;
+        videoPlayer.src = src;
+        videoPlayer.play();
+        videoPlayer.currentTime = currentTime;
+    }
+
+    var userImageLink =  
+            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png"; 
+            var time_start, end_time; 
+            
+            // The size in bytes 
+            var downloadSize = 5616998; 
+            var downloadImgSrc = new Image(); 
+  
+            downloadImgSrc.onload = function () { 
+                end_time = new Date().getTime(); 
+                displaySpeed(); 
+            }; 
+            time_start = new Date().getTime(); 
+            downloadImgSrc.src = userImageLink; 
+            // document.write("time start: " + time_start); 
+            // document.write("<br>"); 
+  
+            function displaySpeed() { 
+                var timeDuration = (end_time - time_start) / 1000; 
+                var loadedBits = downloadSize * 8; 
+                
+               
+                var bps = (loadedBits / timeDuration).toFixed(2); 
+                var speedInKbps = (bps / 1024).toFixed(2); 
+                var speedInMbps = (speedInKbps / 1024).toFixed(2); 
+                return(speedInMbps);
+            } 
+
+</script>
+
+<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
