@@ -10,55 +10,10 @@
     <script src="https://kit.fontawesome.com/510cfc9fc6.js" crossorigin="anonymous"></script>
 
     <title>UfersaTube</title>
-
-    <style>
-        body{
-            background-color: #CAF0F8;
-
-        }
-        .botao{
-            background-color: #03045E;
-            width: 100px;
-        }
-        .pesquisa{
-            width: 700px;
-        }
-    </style>
     
 </head>
 <body>
-    
-    <header> <!-- Cabeçalho Menu Inicio -->
-        <nav class="navbar navbar-expand-sm navbar-light bg-primary">
-          <div class="container">
-            
-            <a href="" class="navbar-brand">
-              <img src="../img/logo.png" width="142">
-            </a>
-  
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-  
-  
-            <form class="d-flex input-group input-group-md">
-              <input class="form-control pesquisa" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-large botao" type="submit">Search</button>
-            </form>
-  
-            <div id="navbarMenu" class="collapse navbar-collapse">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a href="" class="btn btn-outline-light ml-1">Entrar</a>
-                </li>
-              </ul>
-            </div>
-  
-          </div>
-        </nav>
-      </header><!-- Cabeçalho Menu Fim -->
-
-    
+   
     <video id="videoPlayer" width="850" class="videoP" controls muted="muted" >
         <source src="" type="video/mp4"/> 
     </video>
@@ -73,17 +28,18 @@
     <button onclick="big()">Big Buck Bunny</button>
     <button onclick="raindrops()">Raindrops</button>
 </body>
+
 <script>
 
     var videoPlayer = document.getElementById("videoPlayer");
-    
     var currentTime;
+    var atualResolution = 0;
     var chosenVideo = "Big_Buck_Bunny_";
-    var auto = true;
+    var autoResolution = true;
 
     
     setInterval( ()=> {
-        if(auto){
+        if(autoResolution){
             autoQuality();
         }
     }, 10000);
@@ -104,28 +60,34 @@
     }
 
     function autoQuality(){
-        this.auto = true;
+        this.autoResolution = true;
         var internetQuality = displaySpeed();
         var name = "";
-        if(internetQuality < 2000){
+        console.log("Auto ativado");
+        if(internetQuality < 2000 && atualResolution != 240){
             name = "/video/" + chosenVideo + "240p.mp4";
             changeVideoQuality(name);
+            atualResolution = 240;
             console.log("240p");
-        } else if (internetQuality >= 2000 && internetQuality < 3000){
+        } else if (internetQuality >= 2000 && internetQuality < 3000 && atualResolution != 360){
             name = "/video/" + chosenVideo + "360p.mp4";
             changeVideoQuality(name);
+            atualResolution = 360;
             console.log("360p");            
-        } else if (internetQuality >= 3000 && internetQuality < 4000){
+        } else if (internetQuality >= 3000 && internetQuality < 4000 && atualResolution != 480){
             name = "/video/" + chosenVideo + "480p.mp4";
             changeVideoQuality(name);
+            atualResolution = 480;
             console.log("480p");            
-        } else if (internetQuality >= 4000 && internetQuality < 5000){
+        } else if (internetQuality >= 4000 && internetQuality < 5000 && atualResolution != 720){
             name = "/video/" + chosenVideo + "720p.mp4";
             changeVideoQuality(name);
+            atualResolution = 720;
             console.log("720p");            
-        } else if (internetQuality >= 5000 ){
+        } else if (internetQuality >= 5000 && atualResolution != 1080){
             name = "/video/" + chosenVideo + "1080p.mp4"; 
             changeVideoQuality(name);
+            atualResolution = 1080;
             console.log("1080p");           
         }
     }
@@ -133,41 +95,46 @@
     function changeto240(){
         var name240 = "/video/" + chosenVideo + "240p.mp4";
         changeVideoQuality(name240);
-        this.auto = false;
+        this.autoResolution = false;
+        atualResolution = 240;
         console.log("change to 240p");
-        console.log(auto);
+        console.log(autoResolution);
     }
 
     function changeto360(){
         var name360 = "/video/" + chosenVideo + "360p.mp4";
         changeVideoQuality(name360);
-        this.auto = false;
+        this.autoResolution = false;
+        atualResolution = 360;
         console.log("change to 360p");
-        console.log(auto);
+        console.log(autoResolution);
     }
 
     function changeto480(){
         var name480 = "/video/" + chosenVideo + "480p.mp4";
         changeVideoQuality(name480);
-        this.auto = false;
+        this.autoResolution = false;
+        atualResolution = 480;
         console.log("change to 480p");
-        console.log(auto);
+        console.log(autoResolution);
     }
 
     function changeto720(){
         var name720 = "/video/" + chosenVideo + "720p.mp4";
         changeVideoQuality(name720);
-        this.auto = false;
+        this.autoResolution = false;
+        atualResolution = 720;
         console.log("change to 720p");
-        console.log(auto);
+        console.log(autoResolution);
     }
 
     function changeto1080(){
         var name1080 = "/video/" + chosenVideo + "1080p.mp4";
         changeVideoQuality(name1080);
-        this.auto = false;
+        this.autoResolution = false;
+        atualResolution = 1080;
         console.log("change to 1080p");
-        console.log(auto);
+        console.log(autoResolution);
     }
 
     function changeVideoQuality(src){
