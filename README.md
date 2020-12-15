@@ -25,7 +25,7 @@
         <a href="#sobre-o-projeto">Sobre o projeto</a>
         <ul>
           <li><a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a></li>
-          <li><a href="#como-foi-feito">Tecnologias Utilizadas</a></li>
+          <li><a href="#como-foi-feito">Como foi feito</a></li>
         </ul>
       </li>
       <li>
