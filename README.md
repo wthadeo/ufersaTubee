@@ -29,10 +29,10 @@
         </ul>
       </li>
       <li>
-        <a href="#getting-started">Como rodar a aplicação localmente</a>
+        <a href="#executando-o-projeto">Executando o Projeto</a>
         <ul>
-          <li><a href="#prerequisites">Pré-Rquisitos</a></li>
-          <li><a href="#installation">Instalações</a></li>
+          <li><a href="#pré-requisitos">Pré-Requisitos</a></li>
+          <li><a href="#instalação">Instalações</a></li>
         </ul>
       </li>
       <li><a href="#usage">Usage</a></li>
@@ -55,12 +55,12 @@ O projeto tem como objetivo oferecer um aplicação web capaz de disponibilizar 
 O sistema particiona o vídeo em suas respectivas qualidades selecionadas, sendo capaz de alternar entre elas mantendo a minutagem do vídeo fixa.
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Executando o projeto
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Pré Requisitos
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -68,7 +68,7 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-### Installation
+### Instalação
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
