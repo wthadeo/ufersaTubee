@@ -25,6 +25,7 @@
         <a href="#sobre-o-projeto">Sobre o projeto</a>
         <ul>
           <li><a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a></li>
+          <li><a href="#como-foi-feito">Tecnologias Utilizadas</a></li>
         </ul>
       </li>
       <li>
@@ -45,12 +46,13 @@ O projeto tem como objetivo oferecer um aplicação web capaz de disponibilizar 
 
 ### Tecnologias Utilizadas
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)
 * [NodeJS](https://nodejs.org/)
 * [Typescript](https://www.typescriptlang.org/)
 
+### Como foi feito
 
+O sistema particiona o vídeo em suas respectivas qualidades selecionadas, sendo capaz de alternar entre elas mantendo a minutagem do vídeo fixa.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -111,20 +113,11 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
+Daniel Igor Alves Lima - danieligor123@outlook.com.br
+Washington Thadeo Siqueira Gomes - ...
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 
