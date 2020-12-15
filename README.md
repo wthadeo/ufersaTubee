@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="build/public/img/logo.png" alt="Logo" width="157" height="64">
+    <img src="build/public/img/logo2.png" alt="Logo" width="157" height="64">
   </a>
 
   <h3 align="center">UFERSATube</h3>
@@ -35,7 +35,8 @@
           <li><a href="#instalação">Instalação</a></li>
         </ul>
       </li>
-      <li><a href="#usage">Usage</a></li>
+      <li><a href="#usabilidade">Usabilidade</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ol>
   </details>
 
@@ -57,7 +58,7 @@ O sistema particiona o vídeo em suas respectivas qualidades selecionadas, sendo
 <!-- GETTING STARTED -->
 ## Executando o projeto
 
-Um pequeno para obter o projeto funcional em seu espaço de trabalho.
+Um pequeno guia do que fazer pra obter o projeto funcional em seu espaço de trabalho.
 
 ### Pré Requisitos
 
@@ -84,45 +85,19 @@ This is an example of how to list things you need to use the software and how to
    ```
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Usabilidade
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Essa aplicação se torna muito útil principalmente em tempos que o EAD vem crescendo. Com esta plataforma completa (Com controles tanto para alunos quanto professores)
+o streaming das aulas sobre cada matéria, bem como dúvidas sobre a matéria podem ser feitos usando a plataforma. Como atualizações futuras, pretendemos acrescentar também 
+submissão de atividades, bem como resolução de exercícios dentro da própria plataforma.
 
 <!-- CONTACT -->
-## Contact
+## Contato
 
-Daniel Igor Alves Lima - danieligor123@outlook.com.br
-Washington Thadeo Siqueira Gomes - ...
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Daniel Igor Alves Lima - danieligor123@outlook.com.br<br>
+Washington Thadeo Siqueira Gomes - wasrepet@gmail.com<br>
+Link do Projeto: [https://github.com/wthadeo/ufersaTubee]
 
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
