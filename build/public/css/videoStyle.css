@@ -1,0 +1,147 @@
+html{
+	height: 100%;
+  overflow-x: hidden;
+  font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color:  #e0e1dd;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+nav.navbar-transparente{
+	padding: 15px 15px; 
+	background: #0077b6 ;
+}
+
+.videoShow{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 2rem 0 4rem;
+}
+
+.search-input {
+  width: 100%;
+  font-size: inherit;
+  padding: .4em;
+  border: 1px solid #777;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  padding: 0 1.25rem;
+  border: 1px solid #777;
+  background-color: #F8F8F8;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #F0F0F0;
+}
+
+.menu-icons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user-icon {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+}
+
+.logout-icon {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+}
+
+.videoP{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userName{
+  color: white;
+}
+
+
+.bnt-comment{
+  background-color: #03045E;
+  color: white;
+}
+
+.titleStyle{
+  color: #03045E;
+  font-weight: 600;
+}
+
+.btn-space{
+  margin-top: 10px;
+  background-color: #0077b6;
+}
+
+.text-page{
+  color: #0077b6;
+}
+
+/* ########### RODAPE ########### */
+
+footer{
+  margin-top: 15px;
+  background: #0077b6;
+	padding: 50px 0 20px 0;
+	position: relative;
+}
+
+footer h4{
+	color: white;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+	color: white;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover{
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer ul li{
+	float: right;
+	margin: 0 5px;
+}

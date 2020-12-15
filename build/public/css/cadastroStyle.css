@@ -1,0 +1,22 @@
+/* Estrutura do site
+------------------------------------ */
+body {
+  background: #CAF0F8;
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+.btn-azulEscuro{
+  background-color: #03045E;
+}
+
+.btn-azulClaro{
+  background-color: #38AFF0;
+}
+
+a {
+  color: white;
+}
+
+input {
+  color: white;
+}

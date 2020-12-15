@@ -1,0 +1,30 @@
+/* Estrutura do site
+------------------------------------ */
+body {
+  background: #0077b6;
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+#home{
+  margin-top: 200px;
+}
+
+  .btn-azulEscuro{
+    background-color: #03045E;
+  }
+
+  .btn-azulClaro{
+    background-color: #38AFF0;
+  }
+
+a {
+  color: white;
+}
+
+button {
+  color: white;
+}
+
+button:hover{
+  color: #0077b6;
+}

@@ -1,0 +1,23 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const HomeController_1 = __importDefault(require("./controllers/HomeController"));
+const VideoController_1 = __importDefault(require("./controllers/VideoController"));
+const UserController_1 = __importDefault(require("./controllers/UserController"));
+const CommentController_1 = __importDefault(require("./controllers/CommentController"));
+const Auth_1 = __importDefault(require("./middlewares/Auth"));
+let router = express_1.default.Router();
+router.get("/", Auth_1.default, HomeController_1.default.Index);
+router.get("/video/:id", Auth_1.default, VideoController_1.default.Video);
+router.get("/stream/:video/:resolution", Auth_1.default, VideoController_1.default.Stream);
+router.get("/singup", HomeController_1.default.Singup);
+router.post("/auth", UserController_1.default.Auth);
+router.get("/login", HomeController_1.default.Singin);
+router.post("/user", UserController_1.default.Store);
+router.get("/category/:slug", Auth_1.default, HomeController_1.default.Category);
+router.post("/comment", Auth_1.default, CommentController_1.default.Store);
+router.get("/logout", UserController_1.default.Logout);
+exports.default = router;
