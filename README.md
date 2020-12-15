@@ -57,7 +57,7 @@ O sistema particiona o vídeo em suas respectivas qualidades selecionadas, sendo
 <!-- GETTING STARTED -->
 ## Executando o projeto
 
-Um pequeno guia do que fazer pra obter o projeto funcional em seu espaço de trabalho.
+Um pequeno para obter o projeto funcional em seu espaço de trabalho.
 
 ### Pré Requisitos
 
