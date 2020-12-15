@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="build/public/img/logo.png" alt="Logo" width="80" height="80">
+    <img src="build/public/img/logo.png" alt="Logo" width="157" height="64">
   </a>
 
   <h3 align="center">UFERSATube</h3>
