@@ -1,14 +1,15 @@
 <h3 align="center">Universidade Rural do Semi-Árido - UFERSA</h3>
-<h5 align="center">Projeto Final da Disciplina de Sistemas Multimidia</h5>
-<h5 align="center">Alunos: Daniel Igor e Washington Gomes</h5>
+
 
 
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="build/public/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">UFERSATube</h3>
+  
+  <h5 align="center">Projeto Final da Disciplina de Sistemas Multimidia</h5>
 
   <p align="center">
     Aplicação de streaming com fluxo
